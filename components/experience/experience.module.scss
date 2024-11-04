@@ -1,0 +1,115 @@
+@import "@/styles/global.scss";
+@import "@/styles/colors.scss";
+@import "@/styles/borders.scss";
+
+.expUnit {
+  position: relative;
+}
+
+.experienceWrapper {
+  display: grid;
+  grid-column-gap: 32px;
+  margin: 0 auto 28px;
+  max-width: 980px;
+  align-items: flex-start;
+  padding: 0 32px;
+
+  @media (width < $laptop) {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  @media (width < $tablet) {
+    max-width: 520px;
+  }
+}
+
+.experienceData {
+  z-index: 1;
+  display: grid;
+  background-color: $gray_default;
+  border-radius: $border_12;
+  padding: 16px 0;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+
+  @media (width < $laptop) {
+    padding: 0;
+  }
+}
+
+.dateButton {
+  border: none;
+  background-color: $gray_default;
+  color: $gray_500;
+  margin: 16px 32px;
+  transition: all 0.5s ease;
+}
+
+.experienceCard {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-gap: 48px;
+  padding: 32px;
+  z-index: 1;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: $gray_default;
+  border-radius: $border_12;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+
+  @media (width < $desktop) {
+    height: 235px;
+  }
+
+  @media (width < $tablet) {
+    height: auto;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.experienceCard article,
+.experienceCard ul {
+  display: grid;
+  grid-row-gap: 16px;
+
+  @media (width < $desktop) {
+    overflow-y: auto;
+  }
+}
+
+.experienceCard article li {
+  color: $gray_600;
+  list-style-position: inside;
+}
+
+.experienceCard article li::marker {
+  color: $orange_500;
+}
+
+.leftOranges {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @media (width < $tablet) {
+    display: none;
+  }
+}
+
+.rightOranges {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  @media (width < $tablet) {
+    display: none;
+  }
+}
+
+.active {
+  color: $gray_950;
+}

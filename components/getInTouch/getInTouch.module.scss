@@ -1,0 +1,58 @@
+@import "@/styles/global.scss";
+@import "@/styles/colors.scss";
+
+.downInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.downInfo a {
+  text-decoration: none;
+
+  @media (width < $laptop) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.mailLink {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.mailLink::before {
+    width: 32px;
+    height: 32px;
+    background-image: url(../../images/mail_icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+
+    @media (width < $laptop) {
+        width: 24px;
+        height: 24px;
+      }
+}
+
+.phoneLink {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.phoneLink::before {
+  width: 32px;
+  height: 32px;
+  background-image: url(../../images/phone_icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+
+  @media (width < $laptop) {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,113 @@
+@keyframes flow1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  1% {
+    visibility: visible;
+  }
+  10% {
+    transform: translate(10vw, 5px);
+  }
+  20% {
+    transform: translate(20vw, 15px);
+  }
+  30% {
+    transform: translate(30vw, -10px);
+  }
+  50% {
+    transform: translate(50vw, 7px);
+  }
+
+  70% {
+    transform: translate(70vw, -10px);
+  }
+
+  90% {
+    transform: translate(90vw, 10px);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes flow2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  1% {
+    visibility: visible;
+  }
+  10% {
+    transform: translate(10vw, 5px);
+  }
+  20% {
+    transform: translate(20vw, 15px);
+  }
+  30% {
+    transform: translate(30vw, -15px);
+  }
+  50% {
+    transform: translate(50vw, 7px);
+  }
+
+  70% {
+    transform: translate(70vw, -10px);
+  }
+
+  90% {
+    transform: translate(90vw, 0);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.waveUnit {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 95px;
+  overflow: hidden;
+}
+
+.wave1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.wave2 {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.orange1 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  z-index: 2;
+  animation-name: flow1;
+  animation-duration: 27s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.orange2 {
+  visibility: hidden;
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+  animation-name: flow2;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

@@ -1,0 +1,146 @@
+@import "@/styles/fonts.scss";
+@import "@/styles/colors.scss";
+@import "@/styles/borders.scss";
+
+$desktop: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sectionUnit {
+  padding: 96px 80px;
+
+  @media (width < $laptop) {
+    padding: 64px;
+  }
+
+  @media (width < $tablet) {
+    padding: 32px 16px;
+  }
+}
+
+.body2_medium_all {
+  font-family: $font_inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body2_normal_all {
+  font-family: $font_inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.h1_bold_desktop {
+  font-family: $font_inter;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+
+  @media (width < $laptop) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  @media (width < $tablet) {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+.subtitle_semiBold_desktop {
+  font-family: $font_inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.subtitle_normal_desktop {
+  font-family: $font_inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.body1_normal_desktop {
+  font-family: $font_inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.orangeTitle {
+  color: $orange_500;
+}
+
+.grayTitle {
+  color: $gray_600;
+}
+
+.greyUnit {
+  background-color: $gray_50;
+}
+
+.textContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+  max-width: 570px;
+  margin-bottom: 48px;
+}
+
+.textContainer p {
+  @media (width < $laptop) {
+    font-size: 18px;
+  }
+}
+
+.body3_medium_all {
+  font-family: $font_inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card {
+  padding: 32px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
+  border-radius: $border_12;
+  background-color: $gray_default;
+}
+
+.h3_semiBold_TM {
+  font-family: $font_inter;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+.body3_normal_all {
+  font-family: $font_inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.h2_semiBold_desktop {
+  font-family: $font_inter;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+
+.yellowText {
+  color: $yellow_500;
+}

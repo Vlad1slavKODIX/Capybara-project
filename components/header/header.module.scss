@@ -1,0 +1,64 @@
+@import "@/styles/global.scss";
+@import "@/styles/colors.scss";
+
+#header {
+  position: relative;
+  background-color: $gray_default;
+  padding: 16px 80px;
+
+  @media (width < $tablet) {
+    padding: 16px;
+  }
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 32px;
+
+  @media (width < $tablet) {
+    padding: 0;
+  }
+}
+
+header .container nav {
+  display: flex;
+  align-items: center;
+
+  @media (width < $tablet) {
+    display: none;
+  }
+}
+
+header .container ul {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+header .container a {
+  text-decoration: none;
+  color: $gray_600;
+}
+
+header .container button {
+  background: none;
+  border: none;
+}
+
+#menuIcon {
+  display: none;
+
+  @media (width < $tablet) {
+    display: block;
+  }
+} 
+
+#closeMenuIcon {
+  display: none;
+
+  @media (width < $tablet) {
+    display: block;
+  }
+}

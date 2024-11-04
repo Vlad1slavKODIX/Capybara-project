@@ -1,0 +1,51 @@
+@import "@/styles/global.scss";
+@import "@/styles/colors.scss";
+
+.skillsUnit {
+  background-color: $gray_default;
+  position: relative;
+}
+
+.sliderIcons {
+  overflow: hidden;
+  max-width: 720px;
+  margin: 0 auto;
+
+  @media (width < $tablet) {
+    max-width: 550px;
+  }
+}
+
+.sliderIcons img {
+  height: 64px;
+  width: 64px;
+}
+
+.sliderItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.sliderItem p {
+  color: $gray_600;
+}
+
+.skillsUnit .orangeImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  @media (width < $desktop) {
+    max-width: 110px;
+  }
+
+  @media (width < $laptop) {
+    height: 160px;
+  }
+
+  @media (width < $tablet) {
+    display: none;
+  }
+}

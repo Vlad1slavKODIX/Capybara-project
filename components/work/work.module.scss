@@ -1,0 +1,103 @@
+@import "@/styles/global.scss";
+@import "@/styles/colors.scss";
+@import "@/styles/borders.scss";
+
+.workUnit {
+  background-color: $gray_default;
+}
+
+.workUnit .container {
+  padding: 0 64px;
+
+  @media (width < $desktop) {
+    padding: 0;
+  }
+}
+
+.workCardsMain {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.workCard {
+  display: flex;
+  margin: 0 auto;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
+  border-radius: $border_12;
+
+  @media (width < $laptop) {
+    flex-direction: column;
+  }
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+
+  @media (width < $laptop) {
+    height: 384px;
+  }
+}
+
+.workCard h3 {
+  color: $gray_900;
+}
+
+.workCard p {
+  color: $gray_600;
+}
+
+.reversedLayout {
+  flex-direction: row-reverse;
+
+  @media (width < $laptop) {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    border-radius: 0 $border_12 $border_12 0;
+
+    @media (width < $laptop) {
+      border-radius: $border_12;
+    }
+  }
+}
+
+.imageContainer {
+  display: flex;
+  background-color: $gray_100;
+  padding: 48px;
+  border-radius: $border_12 0 0 $border_12;
+  flex: 1;
+
+  @media (width < $laptop) {
+    border-radius: $border_12;
+  }
+
+  @media (width < $tablet) {
+    display: none;
+  }
+}
+
+.workCard article {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 48px;
+  flex: 1;
+}
+
+.langList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.langItem {
+  border-radius: $border_12;
+  background-color: $gray_200;
+  padding: 4px 20px;
+  color: $gray_600;
+}
